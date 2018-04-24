@@ -9,3 +9,17 @@
 .externalNativeBuild
 !/app/build/
 !/.idea/
+/.idea/
+.gitignore
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+app/
+build.gradle
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+icar-crida_keystore.jks
+settings.gradle
