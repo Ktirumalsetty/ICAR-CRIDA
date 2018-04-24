@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorContentBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.org.icaaar_crida.fragment.AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textIsSelectable="true"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:lineSpacingExtra="2dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</ScrollView>
