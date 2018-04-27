@@ -3,10 +3,10 @@
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment sfds dsfdsf dsfdsf dsfdfdsf</string>
     <string name="introduction" formatted="false">
         <![CDATA[
-        Rainfed Agriculture occupies very prominent position in Indian Agriculture. It supports 40% of the India\'s population and contributes 40% to the national food basket. Unlike irrigated areas, where the green revolution ushered significant gains in productivity, rainfed regions continue to suffer from low productivity (< 1 t/ha) due to uncertain rainfall, frequent droughts, degraded soils etc. Increasing climatic variability and climate change pose new challenges in the form of changes in rainfall and temperature patterns coupled with more extreme weather events.
+  Rainfed Agriculture occupies very prominent position in Indian Agriculture. It supports 40% of the India\'s population and contributes 40% to the national food basket. Unlike irrigated areas, where the green revolution ushered significant gains in productivity, rainfed regions continue to suffer from low productivity (< 1 t/ha) due to uncertain rainfall, frequent droughts, degraded soils etc. Increasing climatic variability and climate change pose new challenges in the form of changes in rainfall and temperature patterns coupled with more extreme weather events.
         <p>From the initial efforts of dry farming research at Manjari, Pune in 1923, impetus on dryland agriculture increased over time. A major development was establishment of All India Coordinated Research Project for Dryland Agriculture (AICRPDA) in 1970. To give further boost to basic and strategic research in dryland agriculture, the Indian Council of Agricultural Research (ICAR) established a full-fledged institute Central Research Institute for Dryland Agriculture (CRIDA) at Hyderabad in 1985. Since then, significant contributions have been made in rainfed regions for enhancing the agricultural productivity, conservation and sustainable use of natural resources. CRIDA has successfully executed the National Agricultural Technology Project (NATP) of ICAR by leading the Directorate of Rainfed Agro-ecosystem during 1998-2005. Under National Agricultural Innovation Project (NAIP) too, CRIDA has significantly contributed through basic, strategic and action research projects during 2007-2013.</p>
          <p>Realizing the importance of climate change on Indian agriculture vis-a-vis food security, ICAR initiated a Network Project on Climate Change (NPCC) in 2006 to address climate change related issues of agriculture across the country. Subsequently, ICAR launched the National Initiative on Climate Resilient Agriculture (NICRA) during XI plan with CRIDA as the nodal institute. The main aim of the NICRA is to enhance the resilience of Indian agriculture covering crops, livestock, poultry and fisheries to climate variability and climate change by developing improved production technologies and risk management strategies. By leading two coordinated projects and one large network project, the institute is playing a key role in planning, coordinating and implementing research in key areas of rainfed agriculture and climate change with nationwide foot print. To address the location-specific problems of rainfed areas, ICAR started AICRPDA in 1970 across 22 (presently 25) centres in rainfed regions of the country with the headquarters at Hyderabad.  All India Coordinated Research Project on Agrometeorology (AICRPAM) was started in 1983 for understanding crop-weather relations. Started with 10 centres, AICRPAM now has 25 centres spread across all regions of the country.</p>
         ]]>
@@ -14,10 +14,10 @@
 
     <string name="mandate" formatted="false">
 <![CDATA[
-        •Undertake basic and applied research that will contribute to the development of strategies for sustainable farming systems in the rainfed areas <br></br><br></br>
-    •Act as a repository of information on rainfed agriculture in the country <br></br><br></br>
-    •Provide leadership and co-ordinate network research with state agricultural universities for generating location-specific technologies for rainfed areas <br></br><br></br>
-    •Act as a centre for training in rainfed-farming systems, and •Collaborate with relevant national and international agencies in achieving the above objectives<br></br><br></br>
+        •Undertake basic and applied research that will contribute to the development of strategies for sustainable farming systems in the rainfed areas <br></br>
+    •Act as a repository of information on rainfed agriculture in the country <br></br>
+    •Provide leadership and co-ordinate network research with state agricultural universities for generating location-specific technologies for rainfed areas <br></br>
+    •Act as a centre for training in rainfed-farming systems, and •Collaborate with relevant national and international agencies in achieving the above objectives<br></br>
 ]]>
     </string>
 
@@ -41,24 +41,24 @@
 
     <string name="road_map_for_future" formatted="false">
         <![CDATA[
-       • Continue to address critical problems of rainfed agriculture through basic and strategic research using frontier tools <br></br><br></br>
-• Promote cost-effective water harvesting and recycling technologies for supplemental irrigation and drought-proofing of rainfed crops <br></br><br></br>
-• Application of biotechnological tools for inducing drought tolerance in rainfed crops and enhancing input use efficiency <br></br><br></br>
-• Rehabilitation of marginal and wastelands through crop diversification and alternate land use systems <br></br><br></br>
-• Development of agro-techniques including farming system modules for enhanced productivity and profitability in rainfed regions <br> </br><br></br>
-• Design and development of efficient implements for small farm mechanization and their increased accessibility to small farmers through custom hiring centres <br></br><br></br>
-• Undertake action research to evolve innovations in technology dissemination and up-scaling for enhancing livelihood security <br></br><br></br>
+       • Continue to address critical problems of rainfed agriculture through basic and strategic research using frontier tools <br></br>
+• Promote cost-effective water harvesting and recycling technologies for supplemental irrigation and drought-proofing of rainfed crops <br></br>
+• Application of biotechnological tools for inducing drought tolerance in rainfed crops and enhancing input use efficiency <br></br>
+• Rehabilitation of marginal and wastelands through crop diversification and alternate land use systems <br></br>
+• Development of agro-techniques including farming system modules for enhanced productivity and profitability in rainfed regions <br> </br>
+• Design and development of efficient implements for small farm mechanization and their increased accessibility to small farmers through custom hiring centres <br></br>
+• Undertake action research to evolve innovations in technology dissemination and up-scaling for enhancing livelihood security <br></br>
 • Carry out impact assessment of technologies and suggest policy reforms for better adoption of technologies in rainfed agriculture <br></br>
-• Develop linkages and collaborate with national and international agencies in advancing rainfed agriculture <br></br><br></br>
+• Develop linkages and collaborate with national and international agencies in advancing rainfed agriculture <br></br>
 
         ]]>
     </string>
 
     <string name="nicra" formatted="false">
         <![CDATA[
-      CRIDA coordinates the national programme on climate change across the Country with the following two key objectives: <br></br><br></br>
-• Enhance the resilience of rainfed agriculture to climate change by developing adaptation and mitigation strategies in crop and livestock systems <br></br><br></br>
-• Develop climate smart villages in India by promoting practices that efficiently use weather, soil, water and energy resources <br></br><br></br>
+      CRIDA coordinates the national programme on climate change across the Country with the following two key objectives: <br></br>
+• Enhance the resilience of rainfed agriculture to climate change by developing adaptation and mitigation strategies in crop and livestock systems <br></br>
+• Develop climate smart villages in India by promoting practices that efficiently use weather, soil, water and energy resources <br></br>
         ]]>
     </string>
 
@@ -69,7 +69,6 @@ Director<br></br>
 CENTRAL RESEARCH INSTITUTE FOR DRYLAND AGRICULTURE <br></br>
 </br>Santoshnagar, Hyderabad - 500 059. A.P., India. Ph : +91-40-24530177 <br></br>
 Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></br>
-
         ]]>
     </string>
 
@@ -134,7 +133,7 @@ Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></b
 
 
     <string name="title_about_us">About Us</string>
-    <string name="title_location">Locaiton</string>
+    <string name="title_location">Location</string>
     <string name="title_mandate">Mandate</string>
     <string name="title_organization">Organization</string>
     <string name="title_human_resource">Human Resource</string>
@@ -142,7 +141,7 @@ Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></b
     <string name="title_road_map_for_future">Road Map for Future</string>
     <string name="title_nicra">NICRA</string>
     <string name="title_contact_us">Contact Us</string>
-    <string name="title_laboraturies">Laboraturies</string>
+    <string name="title_laboraturies">Laboratories</string>
     <string name="title_glass_house">Glass House and Net Houses</string>
     <string name="title_climate_change_research_facilities">Climate Change Research Facilities</string>
     <string name="title_agrometeorology_databank">Agrometeorology Databank</string>

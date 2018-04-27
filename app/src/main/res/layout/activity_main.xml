@@ -18,12 +18,12 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" >
             <ImageView
-                android:src="@drawable/img_crida_logo"
+                android:src="@mipmap/ic_launcher"
                 android:layout_width="45dp"
                 android:layout_height="45dp" />
             <TextView
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:text=" ICAR-CRIDA"
+                android:text="  ICAR-CRIDA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </android.support.v7.widget.Toolbar>

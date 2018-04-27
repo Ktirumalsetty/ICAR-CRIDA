@@ -9,6 +9,8 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import in.org.icaar_crida.R;
@@ -45,7 +47,7 @@ public class AboutUsFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     public static final String ARG_MENU_TYPE = "menu_type";
     private static final String ARG_PARAM2 = "param2";
-
+ String style=" <body style=\"text-align:justify;color:black;background-color:#F8E3BD;font-size:120%;\">";
 
     // TODO: Rename and change types of parameters
     private int mParam1;
@@ -53,6 +55,8 @@ public class AboutUsFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     private TextView mTextViewContent;
+    private WebView mWebView;
+    private ImageView mImageViewOne,mImageViewTwo;
 
     public AboutUsFragment() {
         // Required empty public constructor
@@ -88,67 +92,135 @@ public class AboutUsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_about_us, container, false);
         mTextViewContent = view.findViewById(R.id.tv_content);
-        mTextViewContent.setMovementMethod(new ScrollingMovementMethod());
+        mWebView = view.findViewById(R.id.webview);
+        mImageViewOne = view.findViewById(R.id.image);
+        mImageViewTwo = view.findViewById(R.id.image2);
+//        mTextViewContent.setMovementMethod(new ScrollingMovementMethod());
+        mTextViewContent.setVisibility(View.GONE);
 
         switch (mParam1) {
+
             case ABOUT_US:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.introduction)));
+                loadContent(R.string.introduction);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_introduction));
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case LOCATION:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.location)));
+                loadContent(R.string.location);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case MANDATE:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.mandate)));
+                loadContent(R.string.mandate);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case ORGANIZATION:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.organization)));
+                loadContent(R.string.organization);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_organization));
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case HUMAN_RESOURCE:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.human_resource)));
+                loadContent(R.string.human_resource);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case ROAD_MAP_FOR_INFRASTRUCTURE:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.road_map_for_future)));
+                loadContent(R.string.road_map_for_future);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case NICRA:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.nicra)));
+                loadContent(R.string.nicra);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case CONTACT_US:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.contact_address)));
+                loadContent(R.string.contact_address);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case LABORATORIES:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.laboratories)));
+                loadContent(R.string.laboratories);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_guest_house));
+                mImageViewTwo.setImageDrawable(getResources().getDrawable(R.drawable.img_lab));
                 break;
 
             case GLASS_HOUSE:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.glass_house)));
+                loadContent(R.string.glass_house);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case CLIMATE_CHANGE:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.climate_change)));
+                loadContent(R.string.climate_change);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_climatechange));
+                mImageViewTwo.setVisibility(View.GONE);
+
                 break;
             case Agrometeorology_Databank:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.agrometerology_data_bank)));
+                loadContent(R.string.agrometerology_data_bank);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case Library:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.library)));
+                loadContent(R.string.library);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case AKMU:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.akmu)));
+                loadContent(R.string.akmu);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case ITMU:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.itmu)));
+                loadContent(R.string.itmu);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case Research_Farms:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.research_farms)));
+                loadContent(R.string.research_farms);
+                mImageViewOne.setVisibility(View.VISIBLE);
+                mImageViewTwo.setVisibility(View.VISIBLE);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_research_form_1));
+                mImageViewTwo.setImageDrawable(getResources().getDrawable(R.drawable.img_research_form_2));
                 break;
             case Conference_Facilities:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.conference_facilities)));
+                loadContent(R.string.conference_facilities);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.imf_conference));
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
             case Museum:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.museum)));
+                loadContent(R.string.museum);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_museum));
+                mImageViewTwo.setVisibility(View.GONE);
                 break;
 
         }
         return view;
+    }
+
+    private void loadContent(int content){
+        if (mWebView!=null)
+        mWebView.loadData(style+getString(content)+"</body>", "text/html; charset=utf-8", "utf-8");
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

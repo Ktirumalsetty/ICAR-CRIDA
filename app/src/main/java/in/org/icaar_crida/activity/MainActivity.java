@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setTitle("");
         mHandler = new Handler();
         frameLayout = findViewById(R.id.frame);
         mImageButton = findViewById(R.id.ib_menu);
@@ -167,28 +169,29 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             case R.id.agrometeorology_databank:
                 loadFragment(AboutUsFragment.newInstance(Agrometeorology_Databank), getString(R.string.title_agrometeorology_databank));
                 mTvTitle.setText(R.string.title_agrometeorology_databank);
-
+                break;
             case R.id.library:
                 loadFragment(AboutUsFragment.newInstance(Library), getString(R.string.title_library));
                 mTvTitle.setText(R.string.title_library);
-
+                break;
             case R.id.akmu:
                 loadFragment(AboutUsFragment.newInstance(AKMU), getString(R.string.title_AKMU));
                 mTvTitle.setText(R.string.title_AKMU);
-
+                break;
             case R.id.itmu:
                 loadFragment(AboutUsFragment.newInstance(ITMU), getString(R.string.title_ITMU));
                 mTvTitle.setText(R.string.title_ITMU);
                 break;
 
             case R.id.research_farms:
-                loadFragment(AboutUsFragment.newInstance(ITMU), getString(R.string.title_research_farms));
+                loadFragment(AboutUsFragment.newInstance(Research_Farms), getString(R.string.title_research_farms));
                 mTvTitle.setText(R.string.title_research_farms);
                 break;
 
             case R.id.conference_facilities:
                 loadFragment(AboutUsFragment.newInstance(Conference_Facilities), getString(R.string.title_conference_facilities));
                 mTvTitle.setText(R.string.title_conference_facilities);
+                break;
 
             case R.id.museum:
                 loadFragment(AboutUsFragment.newInstance(Museum), getString(R.string.title_museum));
