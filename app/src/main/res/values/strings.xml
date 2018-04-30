@@ -67,8 +67,8 @@
       <br></br>Our Contact Address <br></br>
 Director<br></br>
 CENTRAL RESEARCH INSTITUTE FOR DRYLAND AGRICULTURE <br></br>
-</br>Santoshnagar, Hyderabad - 500 059. A.P., India. Ph : +91-40-24530177 <br></br>
-Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></br>
+</br>Santoshnagar, Hyderabad - 500 059. A.P., India. Ph : +91 -040 24532243,  24530161 <br></br>
+Fax : +91 -040 24531802,  24535336 Website : www.crida.in, E-mail : director.crida@icar.gov.in <br></br>
         ]]>
     </string>
 
@@ -131,6 +131,88 @@ Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></b
         ]]>
     </string>
 
+    <string name="guest" formatted="false">
+        <![CDATA[
+         <b> International Guest House</b><br></br>
+International guest house with four suites and 32 well furnished rooms was commissioned in April 1998 to accommodate trainees and visiting scientists from abroad and within the country.  The four suites and 16 rooms are air-conditioned.
+        ]]>
+    </string>
+
+    <string name="achievements" formatted="false">
+        <![CDATA[
+        Major research achievements of the institute during the last 27 years are:
+<br></br> • Agroclimatic characterization and delineation of areas suitable for different
+crops/cropping systems in rainfed regions and assessment of drought probabilities
+<br></br> • Value added agrometeorological advisory
+services (www.cropweatheroutlook.in) and
+district-wise crop contingency strategies for
+monsoon aberrations
+<br></br> • Development, testing and commercialization of
+implements for timely agricultural operations
+such as planters, intercultural implements,
+herbicide applicators, low-lift portable pump sets for lifting water from farm
+ponds etc
+<br></br> • Release of two improved dual purpose horse gram varieties (CRIDA 18R and
+CRHG 04) for cultivation in peninsular India
+<br></br> • Transgenic sorghum for enhanced drought tolerance
+<br></br> • Identification and popularization of K-636 variety of Leucaena for industrial
+biomass production
+<br></br> • A large culture bank of agriculturally important microbes and microbial
+technologies for enhanced seed germination under high soil temperatures and
+alleviating zinc deficiency in soils
+<br></br> • Development of location specific in situ
+moisture conservation practices for diverse soil
+and climatic conditions
+<br></br> • Mapping areas with potential for rainwater
+harvesting in the country and standardization
+of farm pond technology
+<br></br> • Strategies for agricultural drought management in dryland areas, contingency
+planning and required mid-season interventions
+<br></br> • Soil quality enhancement through residue recycling, conservation agriculture
+and biochar application
+<br></br> • Hyper-spectral remote sensing for detection of crop stresses
+<br></br> • Agrotechnologies for maximizing yields in biofuel crops like jatropha and pongamia
+<br></br> • Easy-to-use software for drought monitoring, estimation of runoff potential in
+watersheds, agroclimate data analysis, tank silt recycling and insect pest
+incidence in rice & cotton.
+<br></br> • Mapping of climatically vulnerable regions of the Country following the IPCC
+methodology of exposure, sensitivity and adaptive capacity
+<br></br> • Weather-based pest and disease forewarning systems for major crops
+<br></br> • Development of alternate land use
+systems involving agri-silvi, silvipastoral,
+agri-horti and horti-pastural
+systems with focus on marginal lands
+<br></br> • Up-scalable models for enhancing
+livelihood security in rural areas through
+convergence of schemes at village level
+        ]]>
+    </string>
+
+    <string name="training_consultancies" formatted="false">
+        <![CDATA[
+        Based on its rich expertise and experience, CRIDA offers the following services:
+<br></br> • Planning, monitoring and evaluation of watershed development projects
+<br></br> • Drought management strategies for minimizing risk in rainfed crops
+<br></br> • Early warning systems for drought studies
+<br></br> • Production technology for rainfed crops
+<br></br> • Integrated pest and nutrient management in
+rainfed crops
+<br></br> • Production of quality biofertilizers, biopesticides
+and planting materials of
+multipurpose trees
+<br></br> • Application of modern tools like GIS, remote sensing etc for resource
+characterization and monitoring
+<br></br> • Dryland mechanization
+<br></br> • Agro-forestry, dryland horticulture and alternative land use systems
+<br></br> • Generation of crop-weather relationship data to support weather based crop
+insurance
+<br></br> • Contract services for analysis of soil, water, plant, organic manures and
+biofertilizers for quality assessment, and greenhouse gases quantification
+Besides, CRIDA can also take up customized consultancies and contract research for
+the clients within its mandate
+        ]]>
+    </string>
+
 
     <string name="title_about_us">About Us</string>
     <string name="title_location">Location</string>
@@ -153,6 +235,9 @@ Fax : +91-40-24531802 Website : www.crida.in, E-mail : director@crida.in <br></b
     <string name="title_research_farms">Research Farms</string>
     <string name="title_conference_facilities">Conference Facilities</string>
     <string name="title_museum">Museum</string>
+    <string name="title_guest">Guest</string>
+    <string name="title_achievements">Achievements</string>
+    <string name="title_training_consultancies">Training,Consultancies</string>
 
 
 </resources>

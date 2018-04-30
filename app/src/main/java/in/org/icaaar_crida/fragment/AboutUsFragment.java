@@ -3,6 +3,7 @@ package in.org.icaaar_crida.fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
@@ -17,11 +18,13 @@ import in.org.icaar_crida.R;
 
 import static in.org.icaar_crida.activity.MainActivity.ABOUT_US;
 import static in.org.icaar_crida.activity.MainActivity.AKMU;
+import static in.org.icaar_crida.activity.MainActivity.Achievements;
 import static in.org.icaar_crida.activity.MainActivity.Agrometeorology_Databank;
 import static in.org.icaar_crida.activity.MainActivity.CLIMATE_CHANGE;
 import static in.org.icaar_crida.activity.MainActivity.CONTACT_US;
 import static in.org.icaar_crida.activity.MainActivity.Conference_Facilities;
 import static in.org.icaar_crida.activity.MainActivity.GLASS_HOUSE;
+import static in.org.icaar_crida.activity.MainActivity.Guest;
 import static in.org.icaar_crida.activity.MainActivity.HUMAN_RESOURCE;
 import static in.org.icaar_crida.activity.MainActivity.ITMU;
 import static in.org.icaar_crida.activity.MainActivity.LABORATORIES;
@@ -33,6 +36,7 @@ import static in.org.icaar_crida.activity.MainActivity.NICRA;
 import static in.org.icaar_crida.activity.MainActivity.ORGANIZATION;
 import static in.org.icaar_crida.activity.MainActivity.ROAD_MAP_FOR_INFRASTRUCTURE;
 import static in.org.icaar_crida.activity.MainActivity.Research_Farms;
+import static in.org.icaar_crida.activity.MainActivity.Training_Consultancies;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,7 +51,7 @@ public class AboutUsFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     public static final String ARG_MENU_TYPE = "menu_type";
     private static final String ARG_PARAM2 = "param2";
- String style=" <body style=\"text-align:justify;color:black;background-color:#F8E3BD;font-size:120%;\">";
+    String style = " <body style=\"text-align:justify;color:black;background-color:#F8E3BD;font-size:120%;\">";
 
     // TODO: Rename and change types of parameters
     private int mParam1;
@@ -56,7 +60,7 @@ public class AboutUsFragment extends Fragment {
 
     private TextView mTextViewContent;
     private WebView mWebView;
-    private ImageView mImageViewOne,mImageViewTwo;
+    private ImageView mImageViewOne, mImageViewTwo;
 
     public AboutUsFragment() {
         // Required empty public constructor
@@ -103,7 +107,13 @@ public class AboutUsFragment extends Fragment {
             case ABOUT_US:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.introduction)));
                 loadContent(R.string.introduction);
-                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_introduction));
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_introduction));
+                    }
+                }, 1000);
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
             case LOCATION:
@@ -139,7 +149,7 @@ public class AboutUsFragment extends Fragment {
             case NICRA:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.nicra)));
                 loadContent(R.string.nicra);
-                mImageViewOne.setVisibility(View.GONE);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_nicra));
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
             case CONTACT_US:
@@ -151,7 +161,7 @@ public class AboutUsFragment extends Fragment {
             case LABORATORIES:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.laboratories)));
                 loadContent(R.string.laboratories);
-                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_guest_house));
+                mImageViewOne.setVisibility(View.GONE);
                 mImageViewTwo.setImageDrawable(getResources().getDrawable(R.drawable.img_lab));
                 break;
 
@@ -206,6 +216,13 @@ public class AboutUsFragment extends Fragment {
                 mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.imf_conference));
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
+
+            case Guest:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.guest)));
+                loadContent(R.string.guest);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_guest_house));
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
             case Museum:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.museum)));
                 loadContent(R.string.museum);
@@ -213,13 +230,27 @@ public class AboutUsFragment extends Fragment {
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
 
+            case Achievements:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.achievements)));
+                loadContent(R.string.achievements);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+
+            case Training_Consultancies:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.training_consultancies)));
+                loadContent(R.string.training_consultancies);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+
         }
         return view;
     }
 
-    private void loadContent(int content){
-        if (mWebView!=null)
-        mWebView.loadData(style+getString(content)+"</body>", "text/html; charset=utf-8", "utf-8");
+    private void loadContent(int content) {
+        if (mWebView != null)
+            mWebView.loadData(style + getString(content) + "</body>", "text/html; charset=utf-8", "utf-8");
 
     }
 

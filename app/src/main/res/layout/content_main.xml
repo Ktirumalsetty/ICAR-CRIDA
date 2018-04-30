@@ -10,13 +10,15 @@
     tools:context="in.org.icaar_crida.activity.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/ll_header"
         android:orientation="horizontal"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <ImageButton
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
             android:layout_gravity="center_vertical"
             android:id="@+id/ib_menu"
             android:layout_marginLeft="10dp"
@@ -26,16 +28,30 @@
             />
 
         <android.support.v7.widget.AppCompatTextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ib_home"
+            android:layout_toRightOf="@+id/ib_menu"
             android:paddingLeft="5dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
             android:textColor="@android:color/white"
-            android:text="Title "
+            android:text="Title longest title hwte hadslhlh asdh lhsd ahsd dsfsdf "
             android:layout_gravity="center_vertical|center_horizontal"
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/ib_home"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|right"
+            android:src="@drawable/ic_action_home"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/frame"

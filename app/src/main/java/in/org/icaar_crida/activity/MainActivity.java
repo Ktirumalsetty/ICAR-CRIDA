@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import in.org.icaaar_crida.fragment.AboutUsFragment;
 import in.org.icaar_crida.R;
@@ -38,10 +39,14 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public static final int ITMU = 16;
     public static final int Research_Farms = 17;
     public static final int Conference_Facilities = 18;
-    public static final int Museum = 19;
+    public static final int Guest = 19;
+    public static final int Museum = 20;
+    public static final int Achievements = 21;
+    public static final int Training_Consultancies = 22;
 
     FrameLayout frameLayout;
     ImageButton mImageButton;
+    ImageButton mImageButtonHome;
     Handler mHandler;
     TextView mTvTitle;
 
@@ -57,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         frameLayout = findViewById(R.id.frame);
         mImageButton = findViewById(R.id.ib_menu);
         mTvTitle = findViewById(R.id.tv_title);
+        mImageButtonHome = findViewById(R.id.ib_home);
 
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +81,14 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         });
         loadFragment(AboutUsFragment.newInstance(ABOUT_US), getString(R.string.title_about_us));
         mTvTitle.setText(R.string.title_about_us);
+        mImageButtonHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadFragment(AboutUsFragment.newInstance(ABOUT_US), getString(R.string.title_about_us));
+                mTvTitle.setText(R.string.title_about_us);
+
+            }
+        });
 
     }
 
@@ -133,6 +147,16 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             case R.id.human_resource:
                 loadFragment(AboutUsFragment.newInstance(HUMAN_RESOURCE), getString(R.string.human_resource));
                 mTvTitle.setText(R.string.title_human_resource);
+                break;
+                case R.id.achievements:
+                loadFragment(AboutUsFragment.newInstance(Achievements), getString(R.string.achievements));
+                mTvTitle.setText(R.string.title_achievements);
+
+                break;
+
+                case R.id.training_consultancies:
+                loadFragment(AboutUsFragment.newInstance(Training_Consultancies), getString(R.string.training_consultancies));
+                mTvTitle.setText(R.string.title_training_consultancies);
 
                 break;
             case R.id.road_map_future:
@@ -193,6 +217,11 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 mTvTitle.setText(R.string.title_conference_facilities);
                 break;
 
+                case R.id.guest:
+                loadFragment(AboutUsFragment.newInstance(Guest), getString(R.string.title_guest));
+                mTvTitle.setText(R.string.title_guest);
+                break;
+
             case R.id.museum:
                 loadFragment(AboutUsFragment.newInstance(Museum), getString(R.string.title_museum));
                 mTvTitle.setText(R.string.title_museum);
@@ -232,5 +261,26 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }

@@ -30,33 +30,55 @@
         android:id="@+id/infra_structure"
         android:title="@string/title_infrastructure">
 
-    <menu>
-        <item android:id="@+id/laboratories"
-            android:title="@string/title_laboraturies" />
-        <item android:id="@+id/glass_house"
-            android:title="@string/title_glass_house" />
-        <item android:id="@+id/climate_change"
-            android:title="@string/title_climate_change_research_facilities" />
-        <item android:id="@+id/agrometeorology_databank"
-            android:title="@string/title_agrometeorology_databank" />
-        <item android:id="@+id/library"
-            android:title="@string/title_library" />
-        <item android:id="@+id/akmu"
-            android:title="@string/title_AKMU" />
-        <item android:id="@+id/itmu"
-            android:title="@string/title_ITMU" />
-        <item android:id="@+id/research_farms"
-            android:title="@string/title_research_farms" />
-        <item android:id="@+id/conference_facilities"
-            android:title="@string/title_conference_facilities" />
-        <item android:id="@+id/museum"
-            android:title="@string/title_museum" />
-    </menu>
+        <menu>
+            <item
+                android:id="@+id/laboratories"
+                android:title="@string/title_laboraturies" />
+            <item
+                android:id="@+id/glass_house"
+                android:title="@string/title_glass_house" />
+            <item
+                android:id="@+id/climate_change"
+                android:title="@string/title_climate_change_research_facilities" />
+            <item
+                android:id="@+id/agrometeorology_databank"
+                android:title="@string/title_agrometeorology_databank" />
+            <item
+                android:id="@+id/library"
+                android:title="@string/title_library" />
+            <item
+                android:id="@+id/akmu"
+                android:title="@string/title_AKMU" />
+            <item
+                android:id="@+id/itmu"
+                android:title="@string/title_ITMU" />
+            <item
+                android:id="@+id/research_farms"
+                android:title="@string/title_research_farms" />
+            <item
+                android:id="@+id/conference_facilities"
+                android:title="@string/title_conference_facilities" />
+
+            <item
+                android:id="@+id/guest"
+                android:title="@string/title_guest" />
+            <item
+                android:id="@+id/museum"
+                android:title="@string/title_museum" />
+        </menu>
     </item>
+    <item
+        android:id="@+id/achievements"
+        android:title="@string/title_achievements" />
+
+    <item
+        android:id="@+id/training_consultancies"
+        android:title="@string/title_training_consultancies" />
     <item
         android:id="@+id/road_map_future"
         android:title="@string/title_road_map_for_future" />
-<item
+
+    <item
         android:id="@+id/nicra"
         android:title="@string/title_nicra" />
 
