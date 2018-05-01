@@ -1,47 +1,69 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fillViewport="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context="in.org.icaaar_crida.fragment.AboutUsFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <TextView
-            android:visibility="gone"
-            android:justificationMode="inter_word"
-            android:textIsSelectable="true"
-            android:textSize="17sp"
-            android:padding="6dp"
-            android:scrollbars="vertical"
-            android:lineSpacingExtra="2.5dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             android:id="@+id/tv_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/introduction" />
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="2.5dp"
+            android:padding="6dp"
+            android:scrollbars="vertical"
+            android:text="@string/introduction"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="true"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
         <WebView
-            android:background="@android:color/transparent"
             android:id="@+id/webview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">  </WebView>
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"></WebView>
+
         <ImageView
-            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:id="@+id/image"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <ImageView
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
             android:id="@+id/image2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
 
     </LinearLayout>
-
-
 
 
 </ScrollView>

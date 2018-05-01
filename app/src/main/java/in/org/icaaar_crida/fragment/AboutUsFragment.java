@@ -60,7 +60,7 @@ public class AboutUsFragment extends Fragment {
 
     private TextView mTextViewContent;
     private WebView mWebView;
-    private ImageView mImageViewOne, mImageViewTwo;
+    private ImageView mImageViewOne, mImageViewTwo,mImageViewThree,mImageViewFour;
 
     public AboutUsFragment() {
         // Required empty public constructor
@@ -99,6 +99,8 @@ public class AboutUsFragment extends Fragment {
         mWebView = view.findViewById(R.id.webview);
         mImageViewOne = view.findViewById(R.id.image);
         mImageViewTwo = view.findViewById(R.id.image2);
+        mImageViewThree = view.findViewById(R.id.image3);
+        mImageViewFour = view.findViewById(R.id.image4);
 //        mTextViewContent.setMovementMethod(new ScrollingMovementMethod());
         mTextViewContent.setVisibility(View.GONE);
 
@@ -233,14 +235,16 @@ public class AboutUsFragment extends Fragment {
             case Achievements:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.achievements)));
                 loadContent(R.string.achievements);
-                mImageViewOne.setVisibility(View.GONE);
-                mImageViewTwo.setVisibility(View.GONE);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_achievements_one));
+                mImageViewTwo.setImageDrawable(getResources().getDrawable(R.drawable.img_achievements_two));
+                mImageViewThree.setImageDrawable(getResources().getDrawable(R.drawable.img_achievements_three));
+                mImageViewFour.setImageDrawable(getResources().getDrawable(R.drawable.img_achievements_four));
                 break;
 
             case Training_Consultancies:
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.training_consultancies)));
                 loadContent(R.string.training_consultancies);
-                mImageViewOne.setVisibility(View.GONE);
+                mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_training));
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
 
