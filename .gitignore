@@ -23,3 +23,5 @@ gradlew
 gradlew.bat
 icar-crida_keystore.jks
 settings.gradle
+app/release
+

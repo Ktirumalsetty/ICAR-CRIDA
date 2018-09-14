@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public static final int Museum = 20;
     public static final int Achievements = 21;
     public static final int Training_Consultancies = 22;
+    public static final int TEAM = 23;
+    public static final int COPY_RIGHT = 24;
+    public static final int DISCLAIMER = 25;
+    public static final int PRIVACY_STATEMENT = 26;
 
     FrameLayout frameLayout;
     ImageButton mImageButton;
@@ -54,10 +58,10 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setTitle("");
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
+//        toolbar.setTitle("");
         mHandler = new Handler();
         frameLayout = findViewById(R.id.frame);
         mImageButton = findViewById(R.id.ib_menu);
@@ -174,6 +178,27 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 mTvTitle.setText(R.string.title_contact_us);
 
                 break;
+            case R.id.team:
+                loadFragment(AboutUsFragment.newInstance(TEAM), getString(R.string.title_team));
+                mTvTitle.setText(R.string.title_team);
+
+                break;
+            case R.id.copyright:
+                loadFragment(AboutUsFragment.newInstance(COPY_RIGHT), getString(R.string.title_copy_right));
+                mTvTitle.setText(R.string.title_copy_right);
+
+                break;
+            case R.id.disclaimer:
+                loadFragment(AboutUsFragment.newInstance(DISCLAIMER), getString(R.string.title_disclaimer));
+                mTvTitle.setText(R.string.title_disclaimer);
+
+                break;
+            case R.id.priv_statement:
+                loadFragment(AboutUsFragment.newInstance(PRIVACY_STATEMENT), getString(R.string.title_statement));
+                mTvTitle.setText(R.string.title_statement);
+
+                break;
+
             //Sub Menus
             case R.id.laboratories:
                 loadFragment(AboutUsFragment.newInstance(LABORATORIES), getString(R.string.title_laboraturies));

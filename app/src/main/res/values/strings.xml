@@ -67,12 +67,12 @@
       Our Contact Address <br></br>
 Director<br></br>
 CENTRAL RESEARCH INSTITUTE FOR DRYLAND AGRICULTURE <br></br>
-</br>Santoshnagar, Hyderabad - 500 059. A.P., India. Ph : +91 -040 24532243,  24530161 <br></br>
-Fax : +91 -040 24531802,  24535336 Website : www.crida.in, E-mail : director.crida@icar.gov.in <br></br>
+Santoshnagar, Hyderabad - 500 059. A.P., India. Ph : +91 -040 24532243,  24530161 <br></br>
+Fax : +91 -040 24531802,  24535336 Website : www.crida.res.in, E-mail : director.crida@icar.gov.in <br></br>
         ]]>
     </string>
 
-<string name="laboratories" formatted="false">
+    <string name="laboratories" formatted="false">
         <![CDATA[
       CRIDA has 15 well-equipped laboratories to support multi-disciplinary research on natural resource management and crop sciences. Laboratories of various disciplines such as Agronomy, Soil chemistry, Soil physics, Hydrology, Plant physiology, Microbiology, Plant breeding, Molecular biology, Agroforestry, Horticulture, Plant pathology, Entomology and Animal sciences are well equipped with state-ofthe-art facilities. In addition, Central laboratory, Agrometeorology Data bank, and GIS laboratories cater to the needs of research across the divisions.  Dedicated laboratories for root study and estimation of green house gases were added during XI plan.
         ]]>
@@ -101,7 +101,7 @@ Fax : +91 -040 24531802,  24535336 Website : www.crida.in, E-mail : director.cri
         The institute\'s library has a collection of over 8187 books and 4719 back volumes of periodicals. It subscribes to 132 Indian and 21 foreign journals and is equipped with AGRICOLA, AGRIS, CROP-CD and Soil-CD databases. The library extends on-line access of over 2000 peer reviewed journals through e-CeRA, Agroforestry abstracts and Science Direct.
         ]]>
     </string>
-<string name="akmu" formatted="false">
+    <string name="akmu" formatted="false">
         <![CDATA[
         Agriculture Knowledge Management Unit (AKMU): <br></br>It provides e-mail, web-hosting, internet and file transfer services to institute scientists and other officers. The Government of India has provided National Knowledge Network (NKN) connectivity to CRIDA. Video conferencing facility has been established with AICRP centres.
         ]]>
@@ -213,6 +213,69 @@ the clients within its mandate
         ]]>
     </string>
 
+    <string name="copyright" formatted="false">
+        <![CDATA[
+       Design of Mobile app and data retrieval formats are protected by copyright and intellectual property laws and are the property of ICAR-CRIDA
+        ]]>
+    </string>
+
+    <string name="disclaimer" formatted="false">
+        <![CDATA[
+       Central Research Institute for Dryland Agriculture is not responsible for the contents or reliability of the linked mobile app pages and does not necessarily endorse the views expressed within them. Listing shall not be taken as endorsement of any kind. We cannot guarantee that these links will work all the time and we have no control over the availability of the linked pages.
+
+Though all efforts have been made to keep the content of this mobile app, accurate and up to date, the same should not be construed as a statement of law or used for any legal purpose. All queries regarding the content of this mobile app may be directed to the Director, CRIDA, Hyderabad-500 059, Telangana, India.
+        ]]>
+    </string>
+
+    <string name="privacy_statement" formatted="false">
+        <![CDATA[
+     This mobile app of ICAR- Central Research Institute for Dryland Agriculture (CRIDA) does not automatically capture any specific personal information from you, (like name, phone number or e-mail address), that allows us to identify you individually. If this mobile app requests you to provide personal information, you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information.
+
+We do not sell or share any personally identifiable information volunteered on this site to any third party (public/private). Any information provided to this mobile app will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction.
+
+We gather certain information about the User, such as Internet Protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our app unless an attempt to damage the app has been detected.
+
+        ]]>
+    </string>
+
+    <string name="team" formatted="false">
+        <![CDATA[
+
+     Dr.R.Nagarjuna Kumar
+
+<br>Scientist (Computer App)
+
+<br>Email: rn.kumar@icar.gov.in
+
+<br>Mob : 9390288999
+
+<br></br>Dr.C.A.Rama Rao
+
+<br>Principal Scientist (Agril. Economics) & Head SDA
+
+<br>Email: car.rao@icar.gov.in
+
+<br></br>Dr.B.M.K.Raju
+
+<br>Principal Scientist (Agril. Statistics)
+
+<br>Email: bmk.raju@icar.gov.in
+
+<br></br>Dr.Josily Samuel
+
+<br>Scientist (Agril. Economics)
+
+<br>Email: s.josily@icar.gov.in
+
+<br></br>Dr.K.Sammi Reddy
+
+<br>Director (Acting)
+
+<br>Email: director-crida@icar.gov.in
+
+        ]]>
+    </string>
+
 
     <string name="title_about_us">About Us</string>
     <string name="title_location">Location</string>
@@ -235,9 +298,13 @@ the clients within its mandate
     <string name="title_research_farms">Research Farms</string>
     <string name="title_conference_facilities">Conference Facilities</string>
     <string name="title_museum">Museum</string>
-    <string name="title_guest">Guest</string>
+    <string name="title_guest">Guest House</string>
     <string name="title_achievements">Achievements</string>
     <string name="title_training_consultancies">Training,Consultancies</string>
+    <string name="title_team">Team</string>
+    <string name="title_copy_right">Copyright</string>
+    <string name="title_disclaimer">Disclaimer</string>
+    <string name="title_statement">Privacy Statement</string>
 
 
 </resources>

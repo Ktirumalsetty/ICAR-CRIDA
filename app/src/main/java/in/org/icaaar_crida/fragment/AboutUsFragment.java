@@ -22,7 +22,9 @@ import static in.org.icaar_crida.activity.MainActivity.Achievements;
 import static in.org.icaar_crida.activity.MainActivity.Agrometeorology_Databank;
 import static in.org.icaar_crida.activity.MainActivity.CLIMATE_CHANGE;
 import static in.org.icaar_crida.activity.MainActivity.CONTACT_US;
+import static in.org.icaar_crida.activity.MainActivity.COPY_RIGHT;
 import static in.org.icaar_crida.activity.MainActivity.Conference_Facilities;
+import static in.org.icaar_crida.activity.MainActivity.DISCLAIMER;
 import static in.org.icaar_crida.activity.MainActivity.GLASS_HOUSE;
 import static in.org.icaar_crida.activity.MainActivity.Guest;
 import static in.org.icaar_crida.activity.MainActivity.HUMAN_RESOURCE;
@@ -34,8 +36,10 @@ import static in.org.icaar_crida.activity.MainActivity.MANDATE;
 import static in.org.icaar_crida.activity.MainActivity.Museum;
 import static in.org.icaar_crida.activity.MainActivity.NICRA;
 import static in.org.icaar_crida.activity.MainActivity.ORGANIZATION;
+import static in.org.icaar_crida.activity.MainActivity.PRIVACY_STATEMENT;
 import static in.org.icaar_crida.activity.MainActivity.ROAD_MAP_FOR_INFRASTRUCTURE;
 import static in.org.icaar_crida.activity.MainActivity.Research_Farms;
+import static in.org.icaar_crida.activity.MainActivity.TEAM;
 import static in.org.icaar_crida.activity.MainActivity.Training_Consultancies;
 
 /**
@@ -245,6 +249,30 @@ public class AboutUsFragment extends Fragment {
                 mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.training_consultancies)));
                 loadContent(R.string.training_consultancies);
                 mImageViewOne.setImageDrawable(getResources().getDrawable(R.drawable.img_training));
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+            case TEAM:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.team)));
+                loadContent(R.string.team);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+            case COPY_RIGHT:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.copyright)));
+                loadContent(R.string.copyright);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+            case DISCLAIMER:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.disclaimer)));
+                loadContent(R.string.disclaimer);
+                mImageViewOne.setVisibility(View.GONE);
+                mImageViewTwo.setVisibility(View.GONE);
+                break;
+            case PRIVACY_STATEMENT:
+                mTextViewContent.setText(Html.fromHtml(getResources().getString(R.string.privacy_statement)));
+                loadContent(R.string.privacy_statement);
+                mImageViewOne.setVisibility(View.GONE);
                 mImageViewTwo.setVisibility(View.GONE);
                 break;
 

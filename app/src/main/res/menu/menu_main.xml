@@ -86,5 +86,19 @@
         android:id="@+id/contact_us"
         android:title="@string/title_contact_us" />
 
+    <item
+        android:id="@+id/team"
+        android:title="@string/title_team" />
+
+    <item
+        android:id="@+id/copyright"
+        android:title="@string/title_copy_right" />
+    <item
+        android:id="@+id/disclaimer"
+        android:title="@string/title_disclaimer" />
+    <item
+        android:id="@+id/priv_statement"
+        android:title="@string/title_statement" />
+
 
 </menu>
